@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Software Engineer | Satrio Adhi Purbo</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+    <link href="./assets/css/custom.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#desktopNav">
+    <header class="header-container p-3 text-bg-dark">
+        <div class="container header">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class="wrp-img">
+                    <img class="img-fluid" src="./assets/images/logo-web-white-full.png" alt="logo-web" loading="lazy">
+                </div>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4" id="desktopNav">
+                    <li><a href="#Home" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#aboutMe" class="nav-link px-2 text-white">About</a></li>
+                    <li><a href="#resume" class="nav-link px-2 text-white">Resume</a></li>
+                    <li><a href="#project" class="nav-link px-2 text-white">Project</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation-mobile fixed-bottom text-center px-2 py-2 shadow-lg d-none">
+        <div class="row">
+            <div class="col">
+                <a href="#Home">
+                    <i class="bi bi-house-fill"></i>
+                    Home
+                </a>
+            </div>
+            <div class="col">
+                <a href="#aboutMe">
+                    <i class="bi bi-person-circle"></i>
+                    About
+                </a>
+            </div>
+            <div class="col">
+                <a href="#resume">
+                    <i class="bi bi-file-earmark-person-fill"></i>
+                    Resume
+                </a>
+            </div>
+            <div class="col">
+                <a href="#project">
+                    <i class="bi bi-kanban-fill"></i>
+                    Project
+                </a>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#contactModal">
+                <i class="bi bi-person-lines-fill"></i>
+                Contact
+            </div>
+        </div>
+    </div>
+
+    <div class="container vh-100 col-lg px-4 py-5 home d-flex align-items-center" id="Home">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6 carousel-home">
+                <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./assets/images/klikindomaret.png" class="d-block w-100" alt="carousel-home">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./assets/images/sobatsewa-mockup.png" class="d-block w-100" alt="carousel-home">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./assets/images/SistemInformasi.png" class="d-block w-100" alt="carousel-home">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./assets/images/QRCODE.png" class="d-block w-100" alt="carousel-home">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A laggy and unresponsive system? </h1>
+                <h3>Just let me know and I'll give you magic. <i class="bi bi-magic"></i></h3>
+                <p class="lead">Hello, I'm Satrio Adhi Purbo, a front-end developer with experience creating responsive
+                    and best-performance systems!</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-black btn-lg px-4 me-md-2" data-bs-toggle="modal"
+                        data-bs-target="#contactModal">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature" id="hanging-icons" data-bs-theme="dark">
+        <div class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">What's here?</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">About Me</h3>
+                        <p>This section will tell you about my experience, capability, and skills. My Journey as a
+                            Front-end
+                            Developer and my future goal.</p>
+                        <a href="#aboutMe" class="btn btn-black">
+                            About Me
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi bi-kanban-fill"></i>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">My Project</h3>
+                        <p>Every step in my journey as a front-end developer. Here, I will explain a little about what
+                            projects I am working on, the tools I use, the challenges, and what lessons I can gain.</p>
+                        <a href="#project" class="btn btn-black">
+                            Project
+                        </a>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <i class="bi bi-person-lines-fill"></i>
+                    </div>
+                    <div>
+                        <h3 class="fs-2 text-body-emphasis">Contact</h3>
+                        <p>So here we are. This section makes us to keep in touch. We can collaborate and grow together!
+                        </p>
+                        <a href="#" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="aboutMe">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-4 col-sm-8 mx-auto" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="It's Me, Satrio ! 😊"><img src="./assets/images/photo-profile.jpg"
+                        alt="photo-profile" class="img-fluid rounded shadow-lg"></div>
+                <div class="col-lg-8 px-5 description">
+                    <h1>About Me</h1>
+                    <p>Hi, I'm Satrio Adhi Purbo, a <b>Front-End Developer</b> with <b>more than 2 years</b> of
+                        experience at <b>Klik
+                            Indomaret</b>. I specialize in <b>designing and implementing</b> user-friendly
+                        <b>interfaces</b>,
+                        optimizing website <b>performance</b>, and ensuring cross-browser <b>compatibility</b>.
+                        I'm skilled in
+                        <b>HTML, CSS, JavaScript, jQuery,</b> and <b>ReactJS</b> frameworks. I enjoy
+                        <b>collaborating</b> with
+                        colleagues from diverse departments, and my goal is to continuously <b>learn</b> and
+                        expand my
+                        knowledge to simplify people's lives through <b>technology</b>.
+                    </p>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Grow at Every Chance, Solving at Every Moment</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Satrio Adhi Purbo</cite>
+                        </figcaption>
+                    </figure>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Name</td>
+                                <td>Satrio Adhi Purbo</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>Perumahan Permata Indah Blok H - 3 RT 02/ RW 08,
+                                    Temanggung, Jawa Tengah</td>
+                            </tr>
+                            <tr>
+                                <td>Zip code</td>
+                                <td>56218</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>satrioadhi04@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>089648595948</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="./assets/files/SatrioAdhiPurbo_Frontend.pdf">
+                        <div class="btn btn-black zoom-in">
+                            Download CV
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr" />
+    <div class="resume" id="resume">
+        <div class="container py-2">
+            <h1 class="text-center">Resume</h1>
+            <div class="row py-2">
+                <div class="col-2 list-anchor">
+                    <div id="list-resume" class="list-group sticky-top">
+                        <a class="list-group-item list-group-item-action" href="#experienceResume">Experience</a>
+                        <a class="list-group-item list-group-item-action" href="#educationResume">Education</a>
+                        <a class="list-group-item list-group-item-action" href="#skillsResume">Skills</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div data-bs-spy="scroll" data-bs-target="#list-resume" class="scrollspy-example" data-bs-offset="0">
+                        <div id="experienceResume">
+                            <h2 class="title rounded shadow-lg p-2">Experience</h2>
+                            <div class="wrp-experience">
+                                <div class="item">
+                                    <div class="d-inline">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-company">
+                                                <img src="/assets/images/indomaret-logo.png" alt="icon"
+                                                    class="img-thumbnail" />
+                                            </div>
+                                            <h4 class="align-self-center company-name" data-bs-toggle="tooltip"
+                                                data-bs-placement="right"
+                                                data-bs-title="It's a wonderfull journey working here!">Indomaret Group
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline">
+                                        <h4 class="position">Front-End Website Developer</h4>
+                                        <span class="d-block">(September 2021 - Present)</span>
+                                        <span>I am currently working as a Front-End Developer for Klik Indomaret, where
+                                            I
+                                            manage
+                                            and develop interfaces for <b>5 different websites</b>.</span>
+                                        <p></p>
+                                        <ul class="number">
+                                            <li>Retail (<a
+                                                    href="https://www.klikindomaret.com/">https://www.klikindomaret.com/</a>)
+                                            </li>
+                                            <li>Food (<a
+                                                    href="https://food.klikindomaret.com/">https://food.klikindomaret.com/</a>)
+                                            </li>
+                                            <li>Virtual (<a
+                                                    href="https://virtual.klikindomaret.com/">https://virtual.klikindomaret.com/</a>)
+                                            </li>
+                                            <li>Travel (<a
+                                                    href="https://travel.klikindomaret.com/">https://travel.klikindomaret.com/</a>)
+                                            </li>
+                                            <li>Ticket (<a
+                                                    href="https://tiket.klikindomaret.com/category/ticket">https://tiket.klikindomaret.com/category/ticket</a>)
+                                            </li>
+                                        </ul>
+
+                                        <p>What i do and my responbilites?</p>
+                                        <ul class="number">
+                                            <li><b>Analyzing</b> the system by coordinating and <b>discussing</b> with
+                                                <b>UI/UX
+                                                    and back-end</b> to
+                                                produce <b>clear requirements</b> and goal systems.
+                                            </li>
+                                            <li><b>Slicing designs</b> from <b>Figma and Adobe XD</b> into <b>HTML, CSS,
+                                                    and
+                                                    JavaScript</b> using the
+                                                framework <b>ReactJs</b>. Applying pixel-perfect principles and the
+                                                Design
+                                                Language
+                                                System (DLS) to produce a fast and responsive system.</li>
+                                            <li><b>Integrating</b> the data from the <b>back-end</b> into the website
+                                                using
+                                                the
+                                                Ajax JQuery
+                                                library to produce a website display with data received from the
+                                                back-end.
+                                            </li>
+                                            <li><b>Create animations</b> using CSS and JavaScript functions to produce a
+                                                <b>fluent and
+                                                    dynamic</b> website appearance.
+                                            </li>
+                                            <li><b>Implementing Search Engine Optimization (SEO)</b> and <b>Google Tag
+                                                    Manager
+                                                    (GTM)</b> to
+                                                study visitor behavior results in improved user experience. </li>
+                                            <li><b>Deploy</b> the system using git with <b>CI/CD</b> pipeline.</li>
+
+                                        </ul>
+
+                                        <p><b>Tuning code:</b></p>
+                                        <p>1. Tuning code on <b>Retail</b> (https://www.klikindomaret.com/)</p>
+                                        <ul>
+                                            <li><b>Refactoring</b> existing code to improve the quality and increase the
+                                                speed
+                                                of the
+                                                website.</li>
+                                            <li><b>Removing</b> code that fires APIs <b>redundantly</b> and
+                                                <b>ineffectively</b>.
+                                            </li>
+                                            <li><b>Fixing</b> styles on websites that are either <b>unresponsive</b> or
+                                                not
+                                                following the
+                                                design.</li>
+                                        </ul>
+                                        <p>
+                                            <b>Skills :</b> HTML · CSS · Javascript · Jquery · Figma · Adobe XD · React
+                                            JS ·
+                                            REST APIs
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr class="hr" />
+                                <div class="item">
+                                    <div class="d-inline">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-company">
+                                                <img src="/assets/images/indomaret-logo.png" alt="icon"
+                                                    class="img-thumbnail" />
+                                            </div>
+                                            <h4 class="align-self-center company-name" data-bs-toggle="tooltip"
+                                                data-bs-placement="right" data-bs-title="I'm learning a lot on here!">
+                                                Indomaret Group
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline">
+                                        <h4 class="position">Front-End Website Developer <span>(Internship)</span></h4>
+                                        <span class="d-block">(January 2021 - September 2021)</span>
+                                        <span>I <b>learned, developed, and maintained </b> the Klik
+                                            Indomaret system.</span>
+                                        <ul>
+                                            <li><b>Understand</b> the Klik Indomaret system by reading the <b>program
+                                                    flow</b>
+                                                and
+                                                <b>documentation</b> to produce a program according to the company's
+                                                standard
+                                                format.
+                                            </li>
+                                            <li><b>Analyzing</b> system requirements in <b>developing account
+                                                    notification
+                                                    features</b> with
+                                                the backend team, technical leader, business analyst, and quality
+                                                assurance</li>
+                                            <li><b>Developing</b> member <b>account notification features</b> by slicing
+                                                designs
+                                                from Adobe XD
+                                                into HTML, CSS, and JavaScript code.</li>
+                                            <li>I <b>fixed</b> a <b>bug</b> with the account notification feature from
+                                                QA
+                                                feedback results.
+                                            </li>
+                                            <li>I am <b>deploying code</b> to production.</li>
+                                        </ul>
+                                        <p>
+                                            <b>Skills :</b> HTML · CSS · Javascript · Jquery · Adobe XD · REST APIs
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr class="hr" />
+                                <div class="item">
+                                    <div class="d-inline">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-company" style="width: 80px;">
+                                                <img src="/assets/images/uajy-logo.png" alt="icon"
+                                                    class="img-thumbnail" />
+                                            </div>
+                                            <h4 class="align-self-center company-name" data-bs-toggle="tooltip"
+                                                data-bs-placement="right"
+                                                data-bs-title="I'm teaching, learning, collaborating">
+                                                Universitas Atma Jaya Yogyakarta
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline">
+                                        <h4 class="position">Data Analysis and Processing <span>(Assistant
+                                                Lecturer)</span></h4>
+                                        <span class="d-block">(July 2019 - Juny 2020)</span>
+                                        <ul>
+                                            <li><b>Making a module</b> for learning <b>"Data Analysis and
+                                                    Processing"</b>.</li>
+                                            <li><b>Teach and guide</b> students for <b>practicum</b> according to module
+                                                using
+                                                data language <b>R
+                                                    and Tableau</b> or <b>Excel</b> to process and create data
+                                                visualizations
+                                            </li>
+                                            <li><b>Making assessments</b> for practicum</li>
+                                        </ul>
+                                        <p>
+                                            <b>Skill :</b> R Language · Python · Tableau · Microsoct Excel
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr class="hr" />
+                            </div>
+                        </div>
+                        <div id="educationResume" class="education">
+                            <h2 class="title rounded shadow-lg p-2">Education</h2>
+                            <div class="wrp-education">
+                                <div class="item">
+                                    <div class="d-inline">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-company" style="width: 80px;">
+                                                <img src="/assets/images/uajy-logo.png" alt="icon"
+                                                    class="img-thumbnail" />
+                                            </div>
+                                            <h4 class="align-self-center company-name" data-bs-toggle="tooltip"
+                                                data-bs-placement="right"
+                                                data-bs-title="It's a wonderfull journey working here!">Universitas Atma
+                                                Jaya Yogyakarta
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline">
+                                        <h4 class="position">Bachelor of Technology - BTech <span>| Information
+                                                Technology</span></h4>
+                                        <span class="d-block">(August 2017 - Juny 2021)</span>
+                                        <p><b>Thesis</b> : Pembangunan Sistem Informasi Penerimaan Siswa Baru Berbasis
+                                            Website
+                                            Pada
+                                            Sekolah Tumbuh
+                                            Yogyakarta</p>
+                                        <p>I <b>actively participated</b> in <b>organizations</b> and <b>excelled in
+                                                academics</b>. I joined the
+                                            <b>student association</b> in <b>(HIMAFORKA)</b> the Communication and
+                                            Information
+                                            division.
+                                        </p>
+                                        <p>- Tasks I performed during the organization </p>
+                                        <ul>
+                                            <li><b>Information liaison</b> between campus and students</li>
+                                            <li>As an <b>admin</b> who manages social media such as <b>Instagram,
+                                                    website, and
+                                                    LINE</b>. </li>
+                                            <li><b>Create</b> poster <b>designs</b> for <b>campus events and monthly
+                                                    calendars</b>. </li>
+                                            <li><b>Conduct communication</b> and <b>discussions</b> with lecturers as a
+                                                liaison
+                                                for <b>student
+                                                    aspirations</b>. </li>
+                                        </ul>
+
+                                        <p>- I also have experience as chairman of the <b>Informatic Festival
+                                                committee
+                                                (IFEST #7)</b>,
+                                            held <b>nationally</b>. </p>
+                                        <p>The <b>series</b> of events in <b>IFEST#7</b>: </p>
+                                        <ul>
+                                            <li><b>Hackathon</b>: Application creation starting from pitching coding to
+                                                presentation
+                                                for 24 hours </li>
+                                            <li><b>I2C (Innovative Informatics Contest)</b>: A competition that tests
+                                                participants'
+                                                ability to formulate ideas to solve various problems in the world by
+                                                providing
+                                                solutions through an Information Technology approach. </li>
+                                            <li><b>Multi Event</b>: An event held for internal Atma Jaya University
+                                                students
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr class="hr" />
+                                <div class="item">
+                                    <div class="d-inline">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-company" style="width: 80px;">
+                                                <img src="/assets/images/logo-SMA.jpg" alt="icon"
+                                                    class="img-thumbnail" />
+                                            </div>
+                                            <h4 class="align-self-center company-name" data-bs-toggle="tooltip"
+                                                data-bs-placement="right"
+                                                data-bs-title="It's a wonderfull journey working here!">SMA N 2
+                                                Temanggung
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="d-inline">
+                                        <h4 class="position">Ilmu Pengetahuan Alam (IPA)</h4>
+                                        <span class="d-block">(July 2014 - August 2017)</span>
+                                        <p>I <b>actively participated</b> in <b>organizational activities</b>, was
+                                            proactive in
+                                            class, and was
+                                            selected to participate in the <b>Olimpiade Sains Nasional (OSN)</b> in the
+                                            field of
+                                            <b>computers</b>.
+                                        </p>
+
+                                        <p>The <b>organization</b> I joined during school</p>
+                                        <ul>
+                                            <li>Organisasi Siswa Intra Sekolah (OSIS)</li>
+                                            <li>Pramuka</li>
+                                            <li>Theater</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hr" />
+                        <div id="skillsResume">
+                            <h2 class="title rounded shadow-lg p-2">Skills</h2>
+                            <h4>Certificates and Competencies</h4>
+                            <p>I have and gained several skill improvements during my work :</p>
+                            <ul>
+                                <b>
+                                    <li>Problem-Solving.</li>
+                                    <li>Communication.</li>
+                                    <li>Collaboration and Coordination.</li>
+                                    <li>Leadership.</li>
+                                    <li>Always thirsty to develop.</li>
+                                    <li>Work in a team or alone.</li>
+                                    <li>Achieving Goals.</li>
+                                </b>
+                            </ul>
+
+                            <p>Certificates:</p>
+                            <ul>
+                                <li><a href="/assets/images/DatabaseAdministrationFundamentals_SatrioAdhiPurbo.pdf"
+                                        Download="Certificate-DB">Microsoft Technology Associate: Database
+                                        Administration Fundamentals (MTA)</a></li>
+                                <li><a href="/assets//images/Certificate_SatrioAdhiPurbo.pdf"
+                                        Download="Certificate-Networking">Microsoft Technology Associate: Networking
+                                        Fundamentals (MTA)</a></li>
+                                <li><a href="/assets/images/Certificate_ASPEN_SatrioAdhiPurbo.pdf"
+                                        download="Certificate-ASPEN">Certified Secure Computer User (C/SCU) v2</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr" />
+    <div class="project" id="project">
+        <div class="wrp-project container text-center">
+            <h1>My Project</h1>
+            <p>Here are some overview of the projects that I have developed</p>
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://www.klikindomaret.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/klikindomaret.png" alt="klik-indomaret" class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Klik Indomaret</h5>
+                        <p class="card-text">This is a large and complex project because it is developing features
+                            for
+                            Indomaret's e-commerce.
+                            In this project I hold 4 sub-projects including food, virtual, travel, tickets.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://food.klikindomaret.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/klikindomaret-food.png" alt="klik-indomaret"
+                            class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Klik Indomaret - Food</h5>
+                        <p class="card-text">Klik Indomaret Food is an online food website that users can pick up
+                            directly at the Indomaret store or make delivery to their homes. This website serves
+                            Indomaret food and beverage products such as point coffee, yummy, washoku sato, mister
+                            donut, etc.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://virtual.klikindomaret.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/klikindomaret-virtual.png" alt="klik-indomaret"
+                            class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Klik Indomaret - Virtual</h5>
+                        <p class="card-text">Klik Indomaret Virtual is a separate website with the Klik Indomaret
+                            domain. Users can make virtual payments for credit, PLN, motorbike tax, etc. This
+                            website can be accessed directly in the Indomaret store with a touch screen near the
+                            cashier or can be accessed directly on the website.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://tiket.klikindomaret.com/category/ticket" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/klikindomaret-tiket.png" alt="klik-indomaret"
+                            class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Klik Indomaret - Tiket</h5>
+                        <p class="card-text">Klik Indomaret Tiket is a website that helps users purchase tickets
+                            online. Users can buy tickets for rides such as Dufan, Ancol and can purchase concert
+                            tickets.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://travel.klikindomaret.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/klikindomaret-travel.png" alt="klik-indomaret"
+                            class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Klik Indomaret - Travel</h5>
+                        <p class="card-text">Klik Indomaret Travel is a website for purchasing travel tickets. Users
+                            can buy a plane, train, and ferry tickets. Easy to use in your hand, get priority
+                            tickets, and safe in transactions.</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://sobatsewa.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/sobatsewa-mockup.png" alt="sobatsewa" class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">SobatSewa</h5>
+                        <p class="card-text">This is a startup that my friends and I created to help in finding
+                            rental motorbikes, cars, play
+                            stations, futsal fields, etc. This is the place where I explore technology and feel the
+                            comparison. I am using ReactJS and VueJS using microservices and learning more about the
+                            backend. Because the team is small, I learned a lot about technology, communication and
+                            coordination.</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://sobatsewa.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/SistemInformasi.png" alt="sistem-informasi"
+                            class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Sistem Informasi Sekolah Tumbuh</h5>
+                        <p class="card-text">It is my full-stack project. I worked on the database using MySQL, the
+                            back-end using the PHP
+                            Codeigniter framework, and the front-end using the Bootstrap framework. This project
+                            functions
+                            to accept registration between levels starting from elementary - middle - high school at
+                            the
+                            Sekolah Tumbuh Yogyakarta. I am multi-role and authenticate by logging in and
+                            registering using
+                            email and monthly reporting into an Excel file.</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                    <a href="https://sobatsewa.com" target="_blank" rel="noopener noreferrer">
+                        <div class="wrp-img">
+                            <img src="/assets/images/project/sobatsewa-mockup.png" alt="sobatsewa"
+                                class="img-fluid card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Kouvee Apps</h5>
+                            <p class="card-text">It is my full-stack project. I worked on the database using MySQL, the back-end using the PHP
+                                Codeigniter framework, and the front-end using the Bootstrap framework. This project functions
+                                to accept registration between levels starting from elementary - middle - high school at the
+                                Sekolah Tumbuh Yogyakarta. I am multi-role and authenticate by logging in and registering using
+                                email and monthly reporting into an Excel file.</p>
+                        </div>
+                    </a>
+                </div> -->
+
+            <div class="card shadow mb-5 bg-body-tertiary rounded m-5 text-center">
+                <a href="https://sobatsewa.com" target="_blank" rel="noopener noreferrer">
+                    <div class="wrp-img">
+                        <img src="/assets/images/QRCODE.png" alt="QRCODE" class="img-fluid card-img-top">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">QR Project - Kayuwangi</h5>
+                        <p class="card-text">The QR Code project is a project to challenge myself in answering
+                            social problems. Kayuwangi is a
+                            wedding organizer team and I offer to create technology to answer the problem of guests
+                            who ask
+                            for lots of photos. The QR Code project is a project that I created to generate a QR
+                            code for
+                            every photo of guests who come so that the guest can download by scanning the QR code. I
+                            use
+                            Python to create the program.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="footer shadow py-5" data-bs-theme="dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About</h5>
+                    <p>This portfolio website is just a small glimpse into who I am. If you want to know me
+                        better, don't hesitate to contact me. I would be more than happy to connect with you and
+                        share more about myself.</p>
+                </div>
+                <div class="w-100 d-lg-none d-xl-none d-xxl-none"></div>
+                <div class="col">
+                    <h5>Link</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Contact</h5>
+                    <ul class="contact">
+                        <li>Perumahan Permata Indah Blok H - 3 RT 02/ RW 08,
+                            Temanggung, Jawa Tengah</li>
+                        <li>satrioadhi04@gmail.com</li>
+                        <li>089648595948</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-block">
+                <p>Created by ❤️ Satrio Adhi Purbo</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down modal-dialog-centered" role="document">
+            <div class="modal-content rounded-4 shadow">
+                <div class="modal-body p-5">
+                    <h2 class="fw-bold mb-0">Wanna contact me?</h2>
+                    <p>Everywhere and anytime! Please don't hesitate.</p>
+
+                    <ul class="d-grid gap-4 my-5 list-unstyled small">
+                        <li class="d-flex gap-4" data-value="wa">
+                            <div class="wrp-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">WhatsApp</h5>
+                                The best way for fast response.
+                            </div>
+                        </li>
+                        <li class="d-flex gap-4" data-value="email">
+                            <div class="wrp-icon">
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">Email</h5>
+                                satrioadhi04@gmail.com
+                            </div>
+                        </li>
+                        <li class="d-flex gap-4" data-value="linkedin">
+                            <div class="wrp-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-0">LinkedIn</h5>
+                                Connect and discuss together!
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-black mt-5 w-100" data-bs-dismiss="modal">Great,
+                        thanks!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
