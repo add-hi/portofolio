@@ -11948,6 +11948,7 @@ textarea.form-control-lg {
   transition: all 0.1s;
 }
 #contactModal .wrp-icon {
+  height: fit-content;
   width: 46px;
   border-radius: 8px;
   display: flex;
