@@ -35,7 +35,7 @@ $(document).ready(function () {
         var value = $(this).attr('data-value');
 
         if (value == 'wa') {
-            window.open('https://wa.me/089648595948');
+            window.open('https://api.whatsapp.com/send?phone=089648595948');
         } else if (value == 'email') {
             window.location.href = 'mailto:satrioadhipurbo?Subject=[Hiring Job] - Front-end Developer';
         } else {
